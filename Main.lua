@@ -2,7 +2,7 @@ local HttpService = game:GetService('HttpService')
 local Supported = false
 local Script = nil
 
-local GameList = game:HttpGet('https://raw.githubusercontent.com/alfiebgtbhgh/coolepic24/master/GameList.json')
+local GameList = game:HttpGet('https://raw.githubusercontent.com/alfiebgtbhgh/coolepic24/main/GameList.json')
 function GetGame()
     local GameTable = HttpService:JSONDecode(GameList)
     if GameTable[tostring(game.PlaceId)] then 
@@ -15,7 +15,7 @@ local Game = GetGame()
 
 if Game then
     Supported = true
-    Script = game:HttpGet('https://raw.githubusercontent.com/alfiebgtbhgh/coolepic24/master/Scripts/' .. Game.ScriptName)
+    Script = game:HttpGet('https://raw.githubusercontent.com/alfiebgtbhgh/coolepic24/main/' .. Game.ScriptName)
 end
 
 local DuckHub = Instance.new("ScreenGui")

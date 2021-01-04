@@ -118,7 +118,7 @@ DuckText.BackgroundTransparency = 1.000
 DuckText.Position = UDim2.new(0.0274305344, 0, 0.99444443, 0)
 DuckText.Size = UDim2.new(0, 48, 0, 30)
 DuckText.Font = Enum.Font.Gotham
-DuckText.Text = "Duck"
+DuckText.Text = "Blaze"
 DuckText.TextColor3 = Color3.fromRGB(255, 255, 255)
 DuckText.TextSize = 20.000
 
